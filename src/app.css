@@ -1,0 +1,188 @@
+.app-container {
+    background-color: #111111;
+    height: 100vh;
+
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    animation: opacity 2s forwards;
+}
+
+.app-container.successfully {
+    justify-content: center;
+    animation: opacity 2s forwards;
+}
+
+.modal-container {
+    background: radial-gradient(circle, #f1b500, #f3a100);
+    width: 90%;
+    /* height: 95%; */
+
+    padding-bottom: 15px;
+    border-radius: 10px;
+    animation: opacity 2s forwards;
+}
+
+.modal-container.successfully {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+img {
+    width: 300px;
+    /* background-color: aqua; */
+    margin-top: 50px;
+}
+
+h1 {
+    display: block;
+    /* background-color: blue; */
+    text-align: center;
+    padding: 20px 0px;
+
+}
+
+form {
+    /* background-color: blueviolet; */
+
+    height: 60%;
+    padding: 15px 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+    box-shadow: 5px 2px 2px #f3a10aa0;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+input:hover {}
+
+.checkbox-area {
+    /* background-color: #f3d500; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    /* background-color: aqua; */
+    margin-left: 5px;
+    color: #0a0a0a;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+
+.btn-area {
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+}
+
+button.confirm-btn {
+    height: 40px;
+    width: 80%;
+    background-color: #004aad;
+    border: 1px solid #0a0a0a;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 600;
+    animation: piscando 3s infinite ease-in-out;
+    transition: all 0.5s;
+    color: #fff;
+    box-shadow: 3px 4px 2px rgb(100, 100, 100);
+}
+
+@keyframes piscando {
+    0% {
+        border: 1px solid #004aad;
+    }
+
+    50% {
+        border: 6px solid #1f72dd;
+    }
+
+    100% {
+        border: 1px solid #004aad;
+    }
+}
+
+.logoUltra-box {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+
+.logoUltra-box img {
+    margin: 15px 0 0 0
+}
+
+.app-container.successfully h1 {
+    font-size: 3em;
+    color: #fff;
+}
+
+.app-container.successfully p {
+    font-size: 1.5em;
+}
+
+.app-container.successfully h3 {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.app-container.successfully span {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.phone-gif {
+    width: 300px;
+
+}
+
+.back-btn {
+    margin-top: 20px;
+    font-size: 1.1em;
+    padding: 15px;
+    background-color: #004aad;
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+
+}
+
+.back-btn a {
+    color: #fff;
+    font-weight: 600;
+}
